@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "noEmit": false,
+    "noEmit": true,
     "noEmitOnError": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -9,17 +9,33 @@
     "allowUnusedLabels": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "module": "es6",
+    "module": "esnext",
     "target": "ES6",
     "pretty": true,
     "alwaysStrict": true,
-    "typeRoots": ["./node-modules/@types"],
+    "typeRoots": [
+      "./node-modules/@types"
+    ],
     "importHelpers": true,
     "rootDir": "./",
-    "jsx": "react-native",
+    "jsx": "react-jsx",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
-
     "allowJs": true,
-  }
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "src"
+  ]
 }

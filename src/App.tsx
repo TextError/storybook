@@ -1,5 +1,5 @@
 const App: React.FC = () => (
-  <>app</>
-)
+  <>Storybook</>
+);
 
 export default App;
