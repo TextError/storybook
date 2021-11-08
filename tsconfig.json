@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "noEmit": false,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "module": "es6",
+    "target": "ES6",
+    "pretty": true,
+    "alwaysStrict": true,
+    "typeRoots": ["./node-modules/@types"],
+    "importHelpers": true,
+    "rootDir": "./",
+    "jsx": "react-native",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+
+    "allowJs": true,
+  }
+}
