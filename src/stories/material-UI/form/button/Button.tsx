@@ -1,22 +1,23 @@
-import './button.css';
+import { Button as MuiButton } from "@mui/material";
+
 
 interface ButtonProps {
   label: string
-  variant: 'text' | 'contained' | 'outlined'
+  variant: 'contained' | 'outlined' | 'text'
   color: 'primary' | 'secondary' | 'success' | 'error'
   onClick?: () => void
 };
 
 /*** Primary UI component for user interaction ***/
-export const Button = ({ label='Button', variant='outlined', color='primary', ...rest }: ButtonProps) => {
-
+export const Button = ({ label, variant, color, ...rest }: ButtonProps) => {
   return (
-    <button
+    <MuiButton
       color={color}
       type="button"
+      variant={variant}
       {...rest}
     >
       {label}
-    </button>
+    </MuiButton>
   );
 };
