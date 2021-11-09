@@ -1,16 +1,18 @@
 import './button.css';
 
 interface ButtonProps {
-  variant: 'text' | 'contained' | 'outlined'
   label: string
+  variant: 'text' | 'contained' | 'outlined'
+  color: 'primary' | 'secondary' | 'success' | 'error'
   onClick?: () => void
 };
 
 /*** Primary UI component for user interaction ***/
-export const Button = ({ variant='outlined', label='Button', ...rest }: ButtonProps) => {
+export const Button = ({ label='Button', variant='outlined', color='primary', ...rest }: ButtonProps) => {
 
   return (
-    <button 
+    <button
+      color={color}
       type="button"
       {...rest}
     >
